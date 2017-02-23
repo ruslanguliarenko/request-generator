@@ -6,5 +6,5 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public interface ScheduledTaskExecutor {
 
-    void executeTask(Runnable task, long period, long workSize, int batchSize, TimeUnit unit);
+    void executeTask(Runnable task, long period, long workMillis, int batchSize, TimeUnit unit);
 }
