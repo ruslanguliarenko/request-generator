@@ -32,8 +32,7 @@ public class TaskExecutor implements ScheduledTaskExecutor {
         }
 
         final ScheduledExecutorService executor = Executors.newScheduledThreadPool(poolSize);
-        AtomicInteger countTaskDone = new AtomicInteger();
-
+        
         for (int k = 0; k <= batchSize; k++) {
             executor.scheduleAtFixedRate(() -> {
                 executor.execute(() -> {
@@ -42,7 +41,6 @@ public class TaskExecutor implements ScheduledTaskExecutor {
             }, delayStart, period, unit);
         }
         stopExecutorOverTime(executor, workMillis);
-
     }
 
     private void stopExecutorOverTime(ExecutorService executor, long timeMillis) {
