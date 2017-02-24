@@ -33,8 +33,5 @@ public class Launcher {
         }
         Launcher launcher = new Launcher();
         launcher.startGenerate(url, workMillis, amountRequest);
-
     }
-
-
 }
