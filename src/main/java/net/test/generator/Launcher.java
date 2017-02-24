@@ -16,7 +16,6 @@ public class Launcher {
     private final HttpRequestSender httpRequestSender = new HttpRequestSenderImpl();
     private final ScheduledTaskExecutor executor = TaskExecutor.create(POOL_SIZE);
 
-
     private void startGenerate(String url, long workMillis, int amountRequest) {
         HttpRequestGenerator generator = new HttpRequestGeneratorImpl(executor, httpRequestSender);
         generator.generateGetRequest(url, DEFAULT_WORK_MILLIS, amountRequest);
