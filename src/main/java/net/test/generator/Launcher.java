@@ -21,7 +21,7 @@ public class Launcher {
         generator.generateGetRequest(url, DEFAULT_WORK_MILLIS, amountRequest);
     }
 
-    public static void main(String... args) {
+    public static void main(String...args) {
         String url = DEFAULT_URL;
         int amountRequest = AMOUNT_REQUEST;
         long workMillis = DEFAULT_WORK_MILLIS;
