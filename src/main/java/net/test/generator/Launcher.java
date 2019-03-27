@@ -8,7 +8,7 @@ import net.test.generator.service.scheduler.TaskExecutor;
 
 public class Launcher {
 
-    public static final int POOL_SIZE = 350;
+    public static final int POOL_SIZE = 160;
     public static final int AMOUNT_REQUEST = 300;
     public static final long DEFAULT_WORK_MILLIS = 20_000;
     public static final String DEFAULT_URL = "https://russia.tv/";
