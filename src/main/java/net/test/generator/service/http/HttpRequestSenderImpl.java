@@ -17,6 +17,7 @@ public class HttpRequestSenderImpl implements HttpRequestSender {
         GetMethod get = new GetMethod(url);
         int status = 0;
         try {
+            System.out.println("Sending request");
             client.executeMethod(get);
             status = get.getStatusCode();
         } catch (IOException e) {
